@@ -1,0 +1,23 @@
+.gridNosotros{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content min-content;
+    grid-template-areas: 
+    "textoGrande textoChico"
+    "banner banner";
+    align-items: center;
+    justify-self: center;
+    .gridTexto .textoLargo{
+        grid-area: textoGrande;
+        .gridTexto .textoCorto{
+            grid-area: textoChico;
+            .contenedorBannerGrande .BannerGrande{
+                grid-area: banner;
+            }
+        }
+    }
+}
+.textoCorto{
+    padding-left: 5rem;
+}
+
