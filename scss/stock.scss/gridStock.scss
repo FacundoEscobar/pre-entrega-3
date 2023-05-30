@@ -1,0 +1,74 @@
+.grid{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas: "lista contenido1 contenido2 contenido3 contenido4"
+    "publicidad contenido5 contenido6 contenido7 contenido8"
+    "publicidad contenido9 contenido10 contenido11 contenido12";
+    align-items: center;
+    justify-items: center;
+}
+
+.grid .listaGrid{
+    height: min-content;
+    grid-area: lista;
+}
+
+.grid .imagenGrid{
+    grid-area: publicidad;
+}
+
+.grid .imagen1{
+    grid-area: contenido1;
+}
+    .grid .imagen2{
+        grid-area: contenido2;
+    }
+        .grid .imagen3{
+            grid-area: contenido3;
+        }
+            .grid .imagen4{
+                grid-area: contenido4;
+            }
+                .grid .imagen5{
+                    grid-area: contenido5;
+                    position: absolute;
+                    left: 19rem;
+                    bottom: 3.7rem;
+                }
+                    .grid .imagen6{
+                        grid-area: contenido6;
+                        position: absolute;
+                        bottom: 3.7rem;
+                        left: 34.8rem;
+                    }
+                        .grid .imagen7{
+                            grid-area: contenido7;
+                            position: absolute;
+                            bottom: 3.7rem;
+                            right: 18.8rem;
+
+                        }
+                            .grid .imagen8{
+                                grid-area: contenido8;
+                                position: absolute;
+                                bottom: 3.7rem;
+                                right: 3.1rem;
+                            }
+                                .grid .imagen9{
+                                    grid-area: contenido9;
+                                }
+                                    .grid .imagen10{
+                                        grid-area: contenido10;
+                                    }
+                                        .grid .imagen11{
+                                            grid-area: contenido11;
+                                        }
+                                            .grid .imagen12{
+                                                grid-area: contenido12;
+                                            }
+
+.foto{
+    align-items: center;
+    justify-content: center;
+}
